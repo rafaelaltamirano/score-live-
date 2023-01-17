@@ -10,7 +10,7 @@ import dagger.hilt.android.AndroidEntryPoint
 
 
 @AndroidEntryPoint
-class InitFragment: Fragment() {
+class InitFragment : Fragment() {
 
     private lateinit var binding: FragmentInitBinding
 

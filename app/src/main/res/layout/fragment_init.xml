@@ -3,6 +3,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".InitFragment">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".InitFragment"
+    android:background="@drawable/background_fragment_init">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="@string/app_name"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        style="@style/PoppinsSemiBold"
+        android:layout_margin="32dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

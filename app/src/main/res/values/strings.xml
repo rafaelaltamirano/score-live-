@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">ScoreLivePoc</string>
+    <string name="app_name">Score Live</string>
+    <string name="recomendaciones">Recomendaciones</string>
+    <string name="ver_historico">Ver histórico</string>
 </resources>

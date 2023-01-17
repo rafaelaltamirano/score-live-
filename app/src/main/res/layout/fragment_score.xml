@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ScoreFragment">
+
+    <include
+        android:id="@+id/toolbar_layout"
+        layout="@layout/app_bar_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/score_progressBar"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:indeterminateOnly="false"
+        android:progressDrawable="@drawable/circle_progress"
+        app:layout_constraintBottom_toTopOf="@+id/status_score_textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_layout"
+        tools:progress="40" />
+
+    <TextView
+        android:id="@+id/percentage_progress_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="33sp"
+        app:layout_constraintBottom_toBottomOf="@+id/score_progressBar"
+        app:layout_constraintEnd_toEndOf="@+id/score_progressBar"
+        app:layout_constraintStart_toStartOf="@+id/score_progressBar"
+        app:layout_constraintTop_toTopOf="@+id/score_progressBar"
+        tools:text="40 / 100" />
+
+    <TextView
+        android:id="@+id/status_score_textView"
+        style="@style/PoppinsMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/recomendaciones_button"
+        app:layout_constraintEnd_toEndOf="@+id/score_progressBar"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/score_progressBar"
+        app:layout_constraintTop_toBottomOf="@+id/score_progressBar"
+        tools:text="¡Bien hecho!" />
+
+    <Button
+        android:id="@+id/recomendaciones_button"
+        style="@style/PoppinsBold"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_principal_buttons"
+        android:text="@string/recomendaciones"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/ver_historico_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/status_score_textView" />
+
+    <Button
+        android:id="@+id/ver_historico_button"
+        style="@style/PoppinsBold"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_principal_buttons"
+        android:text="@string/ver_historico"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recomendaciones_button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

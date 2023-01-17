@@ -9,5 +9,18 @@
         android:id="@+id/initFragment"
         android:name="com.example.scorelivepoc.InitFragment"
         android:label="InitFragment"
-        tools:layout="@layout/fragment_init" />
+        tools:layout="@layout/fragment_init">
+        <action
+            android:id="@+id/initFragment_to_scoreFragment"
+            app:destination="@id/scoreFragment"
+            app:enterAnim="@anim/enter_right_to_left"
+            app:exitAnim="@anim/exit_left"
+            app:popEnterAnim="@anim/pop_enter_left_to_right"
+            app:popExitAnim="@anim/pop_exit_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/scoreFragment"
+        android:name="com.example.scorelivepoc.ScoreFragment"
+        android:label="fragment_score"
+        tools:layout="@layout/fragment_score" />
 </navigation>
