@@ -10,6 +10,7 @@
     <color name="colorPrimary">#01AD35</color>
     <color name="colorPrimaryVariant">#5CC137</color>
     <color name="parentViewBackground">#F5F5F5</color>
+    <color name="blackText">#2E3032</color>
     <color name="violet">#8710EC</color>
     <color name="incompleteProgressColor">#D9D9D9</color>
 </resources>
