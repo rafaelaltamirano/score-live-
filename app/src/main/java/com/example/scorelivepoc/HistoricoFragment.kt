@@ -6,20 +6,20 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
-import com.example.scorelivepoc.databinding.FragmentScoreBinding
+import com.example.scorelivepoc.databinding.FragmentHistoricoBinding
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
-class ScoreFragment : Fragment() {
+class HistoricoFragment: Fragment() {
 
-    private lateinit var binding: FragmentScoreBinding
+    private lateinit var binding: FragmentHistoricoBinding
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        binding = FragmentScoreBinding.inflate(inflater, container, false)
+        binding = FragmentHistoricoBinding.inflate(inflater, container, false)
 
         setListeners()
 
@@ -29,14 +29,6 @@ class ScoreFragment : Fragment() {
     private fun setListeners() {
         binding.toolbarLayout.backToolbar.setOnClickListener {
             findNavController().popBackStack()
-        }
-
-        binding.recomendacionesButton.setOnClickListener {
-            findNavController().navigate(R.id.scoreFragment_to_recommendationsFragment)
-        }
-
-        binding.verHistoricoButton.setOnClickListener {
-            findNavController().navigate(R.id.scoreFragment_to_historicoFragment)
         }
     }
 }
