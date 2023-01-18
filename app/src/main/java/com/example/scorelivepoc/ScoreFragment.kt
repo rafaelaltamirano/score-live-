@@ -30,5 +30,9 @@ class ScoreFragment : Fragment() {
         binding.toolbarLayout.backToolbar.setOnClickListener {
             findNavController().popBackStack()
         }
+
+        binding.recomendacionesButton.setOnClickListener {
+            findNavController().navigate(R.id.scoreFragment_to_recommendationsFragment)
+        }
     }
 }

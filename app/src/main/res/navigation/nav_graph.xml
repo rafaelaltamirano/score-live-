@@ -22,5 +22,18 @@
         android:id="@+id/scoreFragment"
         android:name="com.example.scorelivepoc.ScoreFragment"
         android:label="fragment_score"
-        tools:layout="@layout/fragment_score" />
+        tools:layout="@layout/fragment_score">
+        <action
+            android:id="@+id/scoreFragment_to_recommendationsFragment"
+            app:destination="@id/recommendationsFragment"
+            app:enterAnim="@anim/enter_right_to_left"
+            app:exitAnim="@anim/exit_left"
+            app:popEnterAnim="@anim/pop_enter_left_to_right"
+            app:popExitAnim="@anim/pop_exit_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/recommendationsFragment"
+        android:name="com.example.scorelivepoc.RecommendationsFragment"
+        android:label="RecommendationsFragment"
+        tools:layout="@layout/fragment_recommendations" />
 </navigation>
