@@ -53,10 +53,13 @@
 
     <EditText
         android:id="@+id/usuario_editText"
+        style="@style/PoppinsMedium"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:inputType="text"
+        android:background="@drawable/background_edittext"
         android:hint="ej: usuarioenviado"
+        android:inputType="text"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="@id/cardView"
         app:layout_constraintStart_toStartOf="@id/cardView"
         app:layout_constraintTop_toBottomOf="@id/usuario_textView" />
@@ -74,10 +77,13 @@
 
     <EditText
         android:id="@+id/contraseña_editText"
+        style="@style/PoppinsMedium"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:background="@drawable/background_edittext"
         android:hint="********"
         android:inputType="textPassword"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="@id/cardView"
         app:layout_constraintStart_toStartOf="@id/contraseña_textView"
         app:layout_constraintTop_toBottomOf="@id/contraseña_textView" />

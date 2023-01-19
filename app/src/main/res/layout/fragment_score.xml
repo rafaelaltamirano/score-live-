@@ -18,13 +18,13 @@
         android:layout_width="300dp"
         android:layout_height="300dp"
         android:indeterminateOnly="false"
-        android:progress="40"
-        android:progressDrawable="@drawable/circle_progress"
         app:layout_constraintBottom_toTopOf="@+id/status_score_textView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar_layout" />
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_layout"
+        tools:progress="40"
+        tools:progressDrawable="@drawable/circle_good_progress" />
 
     <TextView
         android:id="@+id/percentage_progress_textView"
@@ -45,11 +45,25 @@
         android:text="¡Bien hecho!"
         android:textColor="@color/colorPrimary"
         android:textSize="22sp"
-        app:layout_constraintBottom_toTopOf="@+id/recomendaciones_button"
+        app:layout_constraintBottom_toTopOf="@+id/text_description_textView"
         app:layout_constraintEnd_toEndOf="@+id/score_progressBar"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="@+id/score_progressBar"
         app:layout_constraintTop_toBottomOf="@+id/score_progressBar" />
+
+    <TextView
+        android:id="@+id/text_description_textView"
+        style="@style/PoppinsMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lee las recomendaciones para pagar menos en tu próxima semana"
+        android:textAlignment="center"
+        android:textColor="@color/blackText"
+        app:layout_constraintBottom_toTopOf="@+id/recomendaciones_button"
+        app:layout_constraintEnd_toEndOf="@+id/score_progressBar"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/score_progressBar"
+        app:layout_constraintTop_toBottomOf="@+id/status_score_textView" />
 
     <Button
         android:id="@+id/recomendaciones_button"
@@ -64,7 +78,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/status_score_textView" />
+        app:layout_constraintTop_toBottomOf="@+id/text_description_textView" />
 
     <Button
         android:id="@+id/ver_historico_button"

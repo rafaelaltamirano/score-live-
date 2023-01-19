@@ -13,4 +13,6 @@
     <color name="blackText">#2E3032</color>
     <color name="violet">#8710EC</color>
     <color name="incompleteProgressColor">#D9D9D9</color>
+    <color name="middleProgressColor">#FBAA7C</color>
+    <color name="badProgressColor">#E35B5B</color>
 </resources>

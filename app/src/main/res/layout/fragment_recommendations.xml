@@ -22,7 +22,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar_layout"
-        tools:text="40 / 100" />
+        android:text="40 / 100" />
 
     <TextView
         android:id="@+id/status_score_textView"
@@ -36,7 +36,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/percentage_progress_textView"
-        tools:text="¡Bien hecho!" />
+        android:text="¡Bien hecho!" />
 
     <TextView
         android:id="@+id/you_can_improve"
@@ -51,7 +51,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/status_score_textView"
-        tools:text="Pero aún puedes mejorar" />
+        android:text="Pero aún puedes mejorar" />
 
 
     <ListView
