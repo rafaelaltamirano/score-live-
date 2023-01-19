@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.example.scorelivepoc.databinding.FragmentRecommendationsBinding
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -23,6 +24,7 @@ class RecommendationsFragment : Fragment() {
 
 
         fillList()
+        setListeners()
 
         return binding.root
     }
@@ -37,9 +39,17 @@ class RecommendationsFragment : Fragment() {
 
         // access the listView from xml file
         val mListView = binding.recommendationsListView
-        arrayAdapter = ArrayAdapter(requireContext(),
-            android.R.layout.simple_list_item_1, users)
+        arrayAdapter = ArrayAdapter(
+            requireContext(),
+            android.R.layout.simple_list_item_1, users
+        )
         mListView.adapter = arrayAdapter
+    }
+
+    private fun setListeners() {
+        binding.toolbarLayout.backToolbar.setOnClickListener {
+            findNavController().popBackStack()
+        }
     }
 
 

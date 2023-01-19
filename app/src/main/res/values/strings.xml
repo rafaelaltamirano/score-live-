@@ -4,4 +4,6 @@
     <string name="ver_historico">Ver histórico</string>
     <string name="text_description_initial_fragment">Revisa cómo puedes mejorar tu Score para tener mejores oportunidades y beneficios</string>
     <string name="ingresar">Ingresar</string>
+    <string name="usuario">Usuario</string>
+    <string name="contrasena">Contraseña</string>
 </resources>

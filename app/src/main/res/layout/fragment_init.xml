@@ -40,6 +40,48 @@
             android:textSize="18sp" />
     </androidx.cardview.widget.CardView>
 
+    <TextView
+        android:id="@+id/usuario_textView"
+        style="@style/PoppinsMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="@string/usuario"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@id/cardView"
+        app:layout_constraintTop_toBottomOf="@id/cardView" />
+
+    <EditText
+        android:id="@+id/usuario_editText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="ej: usuarioenviado"
+        app:layout_constraintEnd_toEndOf="@id/cardView"
+        app:layout_constraintStart_toStartOf="@id/cardView"
+        app:layout_constraintTop_toBottomOf="@id/usuario_textView" />
+
+    <TextView
+        android:id="@+id/contraseña_textView"
+        style="@style/PoppinsMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/contrasena"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@id/usuario_textView"
+        app:layout_constraintTop_toBottomOf="@id/usuario_editText" />
+
+    <EditText
+        android:id="@+id/contraseña_editText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="********"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@id/cardView"
+        app:layout_constraintStart_toStartOf="@id/contraseña_textView"
+        app:layout_constraintTop_toBottomOf="@id/contraseña_textView" />
+
     <Button
         android:id="@+id/ingresar_button"
         style="@style/PoppinsBold"
@@ -47,11 +89,12 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="72dp"
         android:background="@drawable/background_principal_buttons"
+        android:enabled="false"
         android:text="@string/ingresar"
         android:textAllCaps="false"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardView" />
+        app:layout_constraintTop_toBottomOf="@+id/contraseña_editText" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
