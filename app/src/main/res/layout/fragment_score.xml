@@ -28,14 +28,30 @@
 
     <TextView
         android:id="@+id/percentage_progress_textView"
+        style="@style/PoppinsMedium"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="40 / 100"
+        android:textColor="@color/blackText"
         android:textSize="33sp"
-        app:layout_constraintBottom_toBottomOf="@+id/score_progressBar"
+        app:layout_constraintBottom_toTopOf="@id/semana_textView"
         app:layout_constraintEnd_toEndOf="@+id/score_progressBar"
         app:layout_constraintStart_toStartOf="@+id/score_progressBar"
-        app:layout_constraintTop_toTopOf="@+id/score_progressBar" />
+        app:layout_constraintTop_toTopOf="@+id/score_progressBar"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/semana_textView"
+        style="@style/PoppinsMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Semana 4 \n17 Feb al 24 Feb"
+        android:textAlignment="center"
+        android:textColor="@color/blackText"
+        app:layout_constraintBottom_toBottomOf="@+id/score_progressBar"
+        app:layout_constraintEnd_toEndOf="@+id/percentage_progress_textView"
+        app:layout_constraintStart_toStartOf="@+id/percentage_progress_textView"
+        app:layout_constraintTop_toBottomOf="@id/percentage_progress_textView" />
 
     <TextView
         android:id="@+id/status_score_textView"

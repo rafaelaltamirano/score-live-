@@ -17,6 +17,13 @@
             app:exitAnim="@anim/exit_left"
             app:popEnterAnim="@anim/pop_enter_left_to_right"
             app:popExitAnim="@anim/pop_exit_right" />
+        <action
+            android:id="@+id/initFragment_to_queEsElScoreFragment2"
+            app:destination="@id/queEsElScoreFragment"
+            app:enterAnim="@anim/enter_right_to_left"
+            app:exitAnim="@anim/exit_left"
+            app:popEnterAnim="@anim/pop_enter_left_to_right"
+            app:popExitAnim="@anim/pop_exit_right"/>
     </fragment>
     <fragment
         android:id="@+id/scoreFragment"
@@ -48,4 +55,22 @@
         android:name="com.example.scorelivepoc.HistoricoFragment"
         android:label="fragment_historico"
         tools:layout="@layout/fragment_historico" />
+    <fragment
+        android:id="@+id/queEsElScoreFragment"
+        android:name="com.example.scorelivepoc.QueEsElScoreFragment"
+        android:label="fragment_que_es_el_score"
+        tools:layout="@layout/fragment_que_es_el_score" >
+        <action
+            android:id="@+id/queEsElScoreFragment_to_bienvenidaFragment"
+            app:destination="@id/bienvenidaFragment"
+            app:enterAnim="@anim/enter_right_to_left"
+            app:exitAnim="@anim/exit_left"
+            app:popEnterAnim="@anim/pop_enter_left_to_right"
+            app:popExitAnim="@anim/pop_exit_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/bienvenidaFragment"
+        android:name="com.example.scorelivepoc.BienvenidaFragment"
+        android:label="fragment_bienvenida"
+        tools:layout="@layout/fragment_bienvenida" />
 </navigation>

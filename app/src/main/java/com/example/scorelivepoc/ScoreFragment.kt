@@ -1,6 +1,5 @@
 package com.example.scorelivepoc
 
-import android.graphics.drawable.Drawable
 import android.os.Bundle
 import android.text.SpannableString
 import android.text.Spanned
@@ -28,7 +27,7 @@ class ScoreFragment : Fragment() {
     ): View {
         binding = FragmentScoreBinding.inflate(inflater, container, false)
 
-        percentage = Percentage(20)
+        percentage = Percentage(80)
         setListeners()
 
         return binding.root
@@ -68,10 +67,12 @@ class ScoreFragment : Fragment() {
 
     private fun setTextFromProgressValue() {
         val color = resources.getColor(percentage.color, requireActivity().theme)
+        val percentageStringValue = "${percentage.value} / 100"
+        val endLength = percentageStringValue.split(" /")[0].length
 
-        val spannableText = SpannableString("${percentage.value} / 100")
+        val spannableText = SpannableString(percentageStringValue)
         spannableText.setSpan(
-            ForegroundColorSpan(color), 0, 2, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE
+            ForegroundColorSpan(color), 0, endLength, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE
         )
 
         binding.percentageProgressTextView.text = spannableText

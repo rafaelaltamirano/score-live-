@@ -10,10 +10,10 @@ data class Percentage(
 
     @ColorRes
     var color: Int = 0
-    lateinit var statusText: String
-
     @DrawableRes
     var drawableProgress: Int = 0
+
+    lateinit var statusText: String
 
     init {
         if (value in 0..30) {
